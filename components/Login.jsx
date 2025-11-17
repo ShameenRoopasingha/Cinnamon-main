@@ -93,7 +93,7 @@ function Login() {
     // Check server connectivity
     try {
       const isServerReachable = await networkService.isServerReachable(
-        import.meta.env.VITE_API_URL || '/api'
+        import.meta.env.VITE_API_URL || 'http://localhost:5002/api'
       );
       
       if (!isServerReachable) {
